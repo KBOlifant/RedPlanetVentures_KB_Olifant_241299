@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: normal;
+}
+
+p{
+    font-family: 'Sacramento', cursive;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Porter sans Block';
+    src: url(../assets/Fonts/porter-sans-inline-block-webfont.woff) format(woff);
+}
+
+.localFont p{
+    font-family: 'Porter sans Block';
+    font-size: 20px;
+    color: aqua;
+}
+
+.backgroundImage{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-image: url(../assets/images/homeGallery1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+.backgroundImage p{
+    padding: 5em;
+}

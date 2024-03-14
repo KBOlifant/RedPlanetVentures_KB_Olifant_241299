@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+.homePageHeader{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.bottomleftText{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+.bottomleftText h1{
+    margin: auto;
+}
+
+.homePageHeader img{
+    width: 100%;
+} 
+
+.overlayNav{
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.navigation{
+    margin: auto;
+    width: 80%;
+    height: 80px;
+    text-align: center;
+    background-color: #ffffffaa;
+    border-radius: 30px;
+}
+
+.navigation a{
+    float: left;
+    padding: 15px 25px;
+}
