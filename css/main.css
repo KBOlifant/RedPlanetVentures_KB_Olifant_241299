@@ -104,9 +104,11 @@ h2{
 }
 
 .tripHeading{
+    margin: 0 auto;
     padding: 50px;
     text-align: center;
     color: white;
+    width: 50%;
 }
 
 .tripSection{
