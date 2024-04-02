@@ -4,7 +4,7 @@ body{
 
 p{
     font-family:'Poppins';
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     text-align: justify;
     word-spacing: 5px;
@@ -41,8 +41,19 @@ h2{
 
 .bottomleftText{
     position: absolute;
-    bottom: 15%;
-    left: 5%;
+    bottom: 5px;
+    left: 50px;
+}
+
+.bottomleftText h1{
+    font-family:'Porter sans Block';
+    color: red;
+}
+.bottomleftText h2{
+    font-weight: 700;
+    font-family:'Poppins';
+    font-size: 48px;
+    color: blueviolet;
 }
 
 .bottomleftText h1{
@@ -99,6 +110,10 @@ h2{
     color: blueviolet;
 }
 
+.shuttleSection p{
+    color: rgb(75, 75, 75);
+}
+
 .shuttleSection h2{
     color: aqua;
 }
@@ -114,17 +129,17 @@ h2{
     width: 100%;
 }
 
-.flexItem{
-    align-items: center;
-    padding-right: 150px;
+.flexItem2{
+    margin: 50px;
+}
+
+.flexItem img{
+    margin: 50px;
+    padding: 20px 100px;
 }
 
 .flexItem2 h1{
     width: 50%;
-}
-
-.textBlock{
-    padding-top: 50px;
 }
 
 .flexItem3{
@@ -137,11 +152,11 @@ h2{
 }
 
 .tripHeading{
+    padding-top: 50px;
     margin: 0 auto;
-    padding: 50px;
     text-align: center;
     color: white;
-    width: 50%;
+    width: 40%;
 }
 
 .tripSection{
@@ -153,7 +168,15 @@ h2{
     color: aqua;
 }
 
+.textBlock{
+    width: 80%;
+}
+
 .tripRow{
     margin: auto;
     align-items: center;
+}
+
+.tripRow .flexRow img{
+    width: 278px;
 }
