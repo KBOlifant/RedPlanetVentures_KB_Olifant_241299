@@ -24,11 +24,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="homePageHeader">
-            <img src="../assets/headerbackBack.png" width="100%">
-        </div>
-
+    <header class="headerImg" style="background-image: url(../assets/headerbackBack.png)">
         <nav class="overlayNav">
             <div class="bar">
                 <a href="../index.html"><img src="../assets/logo.png" width="266px" height="48px"></a>
@@ -38,34 +34,80 @@
                     <a><p>Flights</p></a>
                     <a><p>Contact</p></a>
                 </div>
-
-                <p>Contact Us</p>
             </div>
         </nav>
+        
+        <div class="contactHeader">
+            <p>Contact Us</p>
+        </div>
+        
     </header>
 
-    <section class="aboutSec">
-        <a>
-            <h2>About</h2>
-            <h1>Red Planet Ventures</h1>
-            <p>Welcome to Red Planet Ventures, where we are dedicated to turning
-                dreams of interplanetary exploration into exhilarating realities. As a
-                premier provider of space tourism experiences, we specialize in
-                crafting meticulously curated journeys to the diverse planets within
-                our solar system. From the rugged terrain of Mars to the majestic
-                rings of Saturn, our expertly designed trips offer unparalleled
-                opportunities for discovery and adventure. With a commitment to
-                safety, innovation, and customer satisfaction, we strive to exceed
-                expectations and leave a lasting impression on every traveler who
-                embarks on a voyage with us. Join us as we push the boundaries of
-                exploration and unlock the mysteries of the cosmos with Red Planet
-                Ventures.
-            </p>
-        </a>
+    <section class="aboutSection">
+        <div class="aboutContent">
+            <div class="flexRow">
+                <div class="flexItem2">
+                    <div class="aboutText">
+                        <h2>About</h2>
+                        <h1>Red Planet Ventures</h1>
+                        <p>Welcome to Red Planet Ventures, where we are dedicated to turning
+                            dreams of interplanetary exploration into exhilarating realities. As a
+                            premier provider of space tourism experiences, we specialize in
+                            crafting meticulously curated journeys to the diverse planets within
+                            our solar system. From the rugged terrain of Mars to the majestic
+                            rings of Saturn, our expertly designed trips offer unparalleled
+                            opportunities for discovery and adventure. With a commitment to
+                            safety, innovation, and customer satisfaction, we strive to exceed
+                            expectations and leave a lasting impression on every traveler who
+                            embarks on a voyage with us. Join us as we push the boundaries of
+                            exploration and unlock the mysteries of the cosmos with Red Planet
+                            Ventures.
+                        </p>
+                    </div>
+                </div>
 
-        <a>
-            <img src="../assets/contactImage.png">
-        </a>
-        
+                <div class="flexItem2">
+                    <img src="../assets/contactImage.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detailSection">
+        <div class="aboutContent">
+            <div class="flexRow">
+                <div class="flexItem2">
+                    <div class="labelText">
+                        <h2>CONTACT US THROUGH OUR</h2>
+                        <h1>SOCIAL MEDIA PAGES</h1>
+                    </div>
+    
+                    <div class="socialItems">
+                        <div class="socialRow">
+                            <div class="flexItem4"><img src="../assets/smInstagram.png"></div>
+                            <div class="flexItem4"><img src="../assets/smX.png"></div>
+                            <div class="flexItem4"><img src="../assets/smTicktock.png"></div>
+                            <div class="flexItem4"><img src="../assets/smFacebook.png"></div>
+                        </div>
+                    </div>
+    
+                    <div class="labelText">
+                        <h2>OR VISTIT US AT OUR</h2>
+                        <h1>PHYSICAL LOCATION</h1>
+                    </div>
+    
+                    <iframe class="Gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114873.13986752897!2d28.134558645335726!3d-25.876532278302317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1712135027402!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                </div>
+    
+                <div class="flexItem2">
+                    <form>
+                        <label for="fname">Your name</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Email address</label><br>
+                        <input type="email" id="lname" name="lname">
+                      </form>
+                </div>
+            </div>
+        </div>
     </section>
 </body>

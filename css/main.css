@@ -6,8 +6,6 @@ p{
     font-family:'Poppins';
     font-weight: 400;
     font-size: 18px;
-    text-align: justify;
-    word-spacing: 5px;
 }
 
 h1{
@@ -80,7 +78,7 @@ h2{
     margin-left: 5%;
 }
 
-.overlayNav a{
+a.overlayNav{
     float: left;
     padding: 15px 20px;
 }
@@ -89,7 +87,7 @@ h2{
     padding-left: 42.5%;
 }
 
-.active p{
+a.active{
     color: rgb(255, 0, 0)
 }
 
@@ -131,10 +129,18 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: row ;
+    margin: auto;
+}
+
+.socialRow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .flexItem2{
-    margin: 50px;
+    margin: 0;
+    flex: 50%;
 }
 
 .flexItem img{
@@ -142,16 +148,15 @@ h2{
     padding: 20px 100px;
 }
 
-.flexItem2 h1{
-    width: 50%;
-}
-
 .flexItem3{
-    flex: 10%;
-    padding: 40px;
+    flex: 20%;
 }
 
 .flexItem3 img{
+    width: 100%;
+}
+
+.flexItem4 img{
     width: 100%;
 }
 
@@ -166,6 +171,7 @@ h2{
 .tripSection{
     background-color: rgb(111, 18, 134);
     height: auto;
+    width: 100%;    
 }
 
 .tripSection h2{
@@ -177,8 +183,7 @@ h2{
 }
 
 .tripRow{
-    margin: auto;
-    align-items: center;
+    width: 100%;
 }
 
 .tripRow .flexRow img{
@@ -193,4 +198,93 @@ h2{
 .arrow img{
     width: 25%;
     height: 25%;
+}
+
+.headerImg{
+    height: 314px;
+    margin: 0 auto;
+}
+
+.contactHeader{
+    position: absolute;
+    width: 100%;
+    transform: translateX(50%);
+    top: 200px;
+}
+
+.aboutContent{
+    margin: 5%;
+}
+
+.aboutContent h2{
+    color: aqua;
+    margin: 0;
+}
+
+.aboutContent h1{
+    color: rgb(50, 8, 88);
+    margin: 0;
+    width: 100%;
+}
+
+.aboutContent p{
+    color: rgb(128, 128, 128);
+    margin: 0;
+    padding-top: 20px;
+}
+
+.aboutContent.flexRow.flexItem2 img{
+    padding-left: 150px;
+}
+
+.Gmaps{
+    border-radius: 30px;
+}
+
+.labelText{
+    padding-top: 100px;
+}
+
+.socialItems{
+    margin: auto;
+}
+
+.midBar{
+    height: 100px;
+    background-color: rgb(61, 11, 107);
+    
+}
+
+.moreInfo{
+    border-top: 1px solid rgb(155, 155, 155);
+    color: rgb(155, 155, 155);
+}
+
+.resultContent{
+    margin-left: 30px;
+    padding: 80px;
+}
+
+.resultContent h1{
+    margin: 0;
+}
+
+.button{
+    background-color: red;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 270px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.bookButton{
+    padding: 40px;
 }
