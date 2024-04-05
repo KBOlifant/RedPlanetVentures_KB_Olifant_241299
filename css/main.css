@@ -28,7 +28,7 @@ h2{
 .localFont p{
     font-family: 'Porter sans Block';
     font-size: 20px;
-    color: aqua;
+    color: #50bfd7;
 }
 
 .homePageHeader{
@@ -39,23 +39,23 @@ h2{
 
 .bottomleftText{
     position: absolute;
-    bottom: 5px;
     left: 50px;
+    padding-top: 800px;
+    text-align: left;
+    width: 40%;
 }
 
 .bottomleftText h1{
     font-family:'Porter sans Block';
     color: red;
+    margin: 0;
 }
 .bottomleftText h2{
     font-weight: 700;
     font-family:'Poppins';
     font-size: 48px;
-    color: blueviolet;
-}
-
-.bottomleftText h1{
-    margin: auto;
+    color: #45016d;
+    margin: 0;
 }
 
 .homePageHeader img{
@@ -84,16 +84,32 @@ a.overlayNav{
 }
 
 .topNavRight{
-    padding-left: 42.5%;
+    position: absolute;
+    margin: 0;
+    transform: translateX(215%);
+    bottom: 35%;
+}
+
+.topNavRight a{
+    color: rgb(73, 73, 73);
+    font-family: 'Poppins';
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500px;
+    text-decoration: none;
+}
+
+.topNavRight img{
+    margin-top: 50px;
 }
 
 a.active{
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
 }
 
 .marsSection{
     margin: 0;
-    background-color: rgb(111, 18, 134);
+    background-color: #45016d;
     width: 100%;
     height: 800px;
     height: auto;
@@ -101,7 +117,7 @@ a.active{
 }
 
 .marsSection h2{
-    color: aqua;
+    color: #50bfd7;
 }
 
 .marsSection h1, p{
@@ -109,7 +125,7 @@ a.active{
 }
 
 .shuttleSection h1{
-    color: blueviolet;
+    color: #45016d;
 }
 
 .shuttleSection p{
@@ -117,7 +133,7 @@ a.active{
 }
 
 .shuttleSection h2{
-    color: aqua;
+    color: #50bfd7;
 }
 
 .shuttleSection{
@@ -136,6 +152,7 @@ a.active{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 60%;
 }
 
 .flexItem2{
@@ -143,13 +160,32 @@ a.active{
     flex: 50%;
 }
 
+.flexItem2 img{
+    padding-left: 10%;
+}
+
+.flexItem2 p{
+    text-align: left;
+}
+
+.ResultText{
+    color: black;
+    width: 80%;
+}
+
 .flexItem img{
     margin: 50px;
-    padding: 20px 100px;
+    padding-left: 100px;
+}
+
+.flexItem p{
+    text-align: left;
+    width: 80%;
 }
 
 .flexItem3{
     flex: 20%;
+    margin-left: 100px;
 }
 
 .flexItem3 img{
@@ -158,6 +194,7 @@ a.active{
 
 .flexItem4 img{
     width: 100%;
+    margin: 0;
 }
 
 .tripHeading{
@@ -168,22 +205,53 @@ a.active{
     width: 40%;
 }
 
+.tripHeading h2, h1{
+    margin: 0;
+}
+
 .tripSection{
-    background-color: rgb(111, 18, 134);
+    background-color: #45016d;
     height: auto;
     width: 100%;    
 }
 
 .tripSection h2{
-    color: aqua;
+    color: #50bfd7;
 }
 
 .textBlock{
     width: 80%;
+    padding-left: 100px;
 }
 
 .tripRow{
+    margin-top: 50px;
     width: 100%;
+    align-items: center;
+}
+
+.tripText p{
+    width: 85%;
+}
+
+.tripText h2{
+    width: 75%;
+}
+
+.tripText h2, p{
+    margin: 0;
+    text-align: center;
+}
+
+.tripText h2{
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+}
+
+.tripItems{
+    align-items: center;
+    
 }
 
 .tripRow .flexRow img{
@@ -201,15 +269,18 @@ a.active{
 }
 
 .headerImg{
-    height: 314px;
+    height: 500px;
     margin: 0 auto;
 }
 
-.contactHeader{
+.contactHeader p{
+    font-family:'Porter sans Block';
     position: absolute;
     width: 100%;
-    transform: translateX(50%);
-    top: 200px;
+    top: 270px;
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
 }
 
 .aboutContent{
@@ -231,10 +302,7 @@ a.active{
     color: rgb(128, 128, 128);
     margin: 0;
     padding-top: 20px;
-}
-
-.aboutContent.flexRow.flexItem2 img{
-    padding-left: 150px;
+    text-align: left;
 }
 
 .Gmaps{
@@ -251,13 +319,24 @@ a.active{
 
 .midBar{
     height: 100px;
-    background-color: rgb(61, 11, 107);
-    
+    background-color: #45016d;
 }
 
 .moreInfo{
-    border-top: 1px solid rgb(155, 155, 155);
+    border-top: 2px solid rgb(211, 211, 211);
     color: rgb(155, 155, 155);
+}
+
+.infoText{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.infoText h2{
+    line-height: 50px;
+    font-weight: 400;
 }
 
 .resultContent{
@@ -265,12 +344,39 @@ a.active{
     padding: 80px;
 }
 
+.resultContent h3{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    border-left: 2px solid rgb(155, 155, 155);
+    color: gray;
+    padding: 12px;
+}
+
 .resultContent h1{
     margin: 0;
 }
 
+.price{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    color: gray;
+}
+
+.price h2{
+    font-size: 24px;
+    font-weight: 450;
+    margin: 0;
+}
+
+.streak{
+    text-decoration-line: line-through;
+    text-decoration-thickness: 12%;
+}
+
 .button{
-    background-color: red;
+    background-color: #e51728;
     border-radius: 16px;
     color: white;
     text-align: center;
@@ -285,6 +391,208 @@ a.active{
     cursor: pointer;
 }
 
-.bookButton{
-    padding: 40px;
+.buttonRow{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.buttonItem2{
+    gap: 50px;
+}
+
+.IncButton{
+    background-color: #45016d;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 135px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 16px;
+    padding-left: 10px;
+}
+
+.buttonContainer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.result2{
+    background-color: #45016d;
+}
+
+.homeButton{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.tripButton{
+    padding-left: 44%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footerSec{
+    padding: 50px;
+    margin-left: 200px;
+}
+
+.footerRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row ;
+    margin: auto;
+    gap: 200px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(211, 211, 211);
+}
+
+.flexItem5 p{
+    color: black;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.flexItem5 h1{
+    font-size: 24px;
+}
+
+.flexItem5 h2{
+    color: grey;
+}
+
+.footerText{
+    gap: 100px;
+}
+
+.shuttleInnerSec{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#contact{
+    background-image: url(../assets/formBack.png);
+    background-size: cover;
+    background-position: right;
+    padding: 50px;
+    width: 500px;
+    margin: 50px 0;
+    margin-left: 160px;
+    border-radius: 50px;
+}
+
+#contact h3{
+    color: #dddddd;
+    display: block;
+    font-family: 'Poppins';
+    font-size:  35px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#contact input, #contact textarea, #contact button{
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+fieldset{
+    border: medium none !important;
+    margin: 0 0 50px;
+    min-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#contact textarea{
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button{
+    cursor: pointer;
+    width: 250px;
+    height: 70px;
+    border: none;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 16px;
+}
+
+#contact input:hover, #contact textarea:hover{
+    border-bottom: 1px solid #5900ff;
+    background-color: #ececec;
+}
+
+#contact input:focus, #contact textarea:focus{
+    background-color: #ccc;
+}
+
+#contact button:hover{
+    background-color: #ff0000bd;
+}
+
+#contact input{
+    height: 50px;
+}
+
+
+#contact label{
+    color: white;
+    font-family: 'Poppins';
+}
+
+#result2Heading{
+    color: white;
+}
+
+#priceResult2{
+    color: aqua;
+    font-weight: 300;
+}
+
+#buttonResult2{
+    background-color: aqua;
+}
+
+#result2Desc{
+    color: white;
+    font-weight: 300;
+}
+
+#result2Info{
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+#resultImage{
+    width: 500px;
+}
+
+#socialImg img{
+    height: 27px;
+}
+
+#homeButton{
+    margin: 100px;
 }

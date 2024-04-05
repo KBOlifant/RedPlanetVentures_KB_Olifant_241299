@@ -26,19 +26,19 @@
 <body>
     <header class="headerImg" style="background-image: url(../assets/headerbackBack.png)">
         <nav class="overlayNav">
-            <div class="bar">
+            <div  class="bar">
                 <a href="../index.html"><img src="../assets/logo.png" width="266px" height="48px"></a>
 
                 <div class="topNavRight">
-                    <a class="active"><p>Home</p></a>
-                    <a><p>Flights</p></a>
-                    <a><p>Contact</p></a>
+                    <a href="../index.html">Home</a>
+                    <a class="active">Flights</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
         </nav>
         
         <div class="contactHeader">
-            <p>Contact Us</p>
+            <p>Book a Flight</p>
         </div>
         
     </header>
@@ -50,46 +50,334 @@
     <section class="result1">
         <div class="resultContent">
             <div class="flexRow">
-                <div class="flexItem2">
+                <div id="flexEXC" class="flexItem2">
                     <img src="../assets/flighhtMars.png">
                 </div>
     
                 <div class="flexItem2">
                     <h1>The Classic Mars Experience</h1>
-                    <h2>Embark on a Mars vacation: red deserts, ancient relics, and towering 
+
+                    <div class="price">
+                        <h2>R 25,000.00</h2>
+                        <h2 class="streak">R 50,000.00</h2>
+                    </div>
+                    
+                    <h3>36 Customer Review</h3>
+
+                    <p class="ResultText">Embark on a Mars vacation: red deserts, ancient relics, and towering 
                         canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and 
                         stargazing under Phobos and Deimos. Unforgettable adventures beckon 
                         on the rust-colored landscapes of the Red Planet.
-                    </h2>
+                    </p>
 
-                    <div class="flexRow">
-                        <div class="flexItem2">
-                            <div class="sizeChange">
-                                - 1 +
+                    <div class="buttonContainer">
+                        <div class="buttonRow">
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="IncButton" type="button">- 1 +</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flexItem2">
-                            <div class="bookButton">
-                                <button class="button" type="button">Book Now</button>
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="button" type="button">Book Now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
 
-                    
-    
                     <div class="moreInfo">
-                        <h2>SKU : SS001</h2>
-                        <h2>Shuttle : The Opulence</h2>
-                        <h2>Tags : Mars, Luxury, Sale</h2>
-                        <h2>Date : 16 June - 19 July</h2>
+                        <div class="infoText">
+                            <h2>SKU <br> Shuttle <br> Tags <br> Date </h2>
+                            <h2>: SS001 <br> : The Opulence <br> : Mars, Luxury, Sale <br> : 16 June - 19 July</h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="result2">
+        <div class="resultContent">
+            <div class="flexRow">
+                <div class="flexItem2">
+                    <img src="../assets/flightNeptune.png" width>
+                </div>
+    
+                <div class="flexItem2">
+                    <h1 id="result2Heading">Neptune’s Cosmic Dive</h1>
 
+                    <div id="priceResult2" class="price">
+                        <h2>R 45,000.00</h2>
+                    </div>
+
+                    <h3>24 Customer Review</h3>
+                    
+                    <p id="result2Desc" class="ResultText">Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness 
+                        surreal vistas of swirling clouds and rings. Experience weightlessness and 
+                        explore frigid oceans. Engage in thrilling spacewalks, observe celestial 
+                        phenomena, and savor gourmet space cuisine. An unforgettable 
+                        adventure awaits, blending luxury with cosmic exploration.
+                    </p>
+
+                    <div class="buttonContainer">
+                        <div class="buttonRow">
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button id="buttonResult2" class="IncButton" type="button">- 1 +</button>
+                                </div>
+                            </div>
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="button" type="button">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="result2Info" class="moreInfo">
+                        <div class="infoText">
+                            <h2>SKU <br> Shuttle <br> Tags <br> Date </h2>
+                            <h2>: SS405 <br> : The Voyager <br> : Neptune, Commercial, Gourmet Experience <br> : 4 April - 28 March</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="result1">
+        <div class="resultContent">
+            <div class="flexRow">
+                <div class="flexItem2">
+                    <img src="../assets/flightJupiter.png">
+                </div>
+    
+                <div class="flexItem2">
+                    <h1>The Giant’s Journey</h1>
+
+                    <div class="price">
+                        <h2>R 65,000.00</h2>
+                    </div>
+                    
+                    <h3>48 Customer Review</h3>
+
+                    <p class="ResultText">Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its 
+                        majestic storms and swirling atmosphere. Dive into metallic hydrogen 
+                        oceans. Explore its moons, each a world unto itself. Engage in gravity 
+                        surfing, comet chasing, and space excursions. Experience cosmic wonder 
+                        in luxury, blending exploration with adventure.
+                    </p>
+
+                    <div class="buttonContainer">
+                        <div class="buttonRow">
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="IncButton" type="button">- 1 +</button>
+                                </div>
+                            </div>
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="button" type="button">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="moreInfo">
+                        <div class="infoText">
+                            <h2>SKU <br> Shuttle <br> Tags <br> Date </h2>
+                            <h2>: SS606 <br> : The Odyssey <br> : Jupiter, Luxury, Adventure <br> : 15 June - 30 July</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="result2">
+        <div class="resultContent">
+            <div class="flexRow">
+                <div class="flexItem2">
+                    <img src="../assets/flightSaturn.png" width>
+                </div>
+    
+                <div class="flexItem2">
+                    <h1 id="result2Heading">Ring Around a Saturn</h1>
+
+                    <div id="priceResult2" class="price">
+                        <h2>R 40,000.00</h2>
+                    </div>
+
+                    <h3>16 Customer Review</h3>
+                    
+                    <p id="result2Desc" class="ResultText">Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer." 
+                        Marvel at its iconic rings and turbulent storms. Explore its diverse moons, 
+                        from icy Enceladus to mysterious Titan, with activities including rover 
+                        expeditions and cave exploration. Experience the wonders of the cosmos 
+                        amidst luxurious accommodations, where the thrill of discovery 
+                        intertwines seamlessly with the excitement of adventure.
+                    </p>
+
+                    <div class="buttonContainer">
+                        <div class="buttonRow">
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button id="buttonResult2" class="IncButton" type="button">- 1 +</button>
+                                </div>
+                            </div>
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="button" type="button">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="result2Info" class="moreInfo">
+                        <div class="infoText">
+                            <h2>SKU <br> Shuttle <br> Tags <br> Date </h2>
+                            <h2>: SS001 <br> : The Opulence <br> : Mars, Luxury, Sale <br> : 16 June - 19 July</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="result1">
+        <div class="resultContent">
+            <div class="flexRow">
+                <div class="flexItem2">
+                    <img src="../assets/flightUranus.png">
+                </div>
+    
+                <div class="flexItem2">
+                    <h1>Uranus Uncharted</h1>
+
+                    <div class="price">
+                        <h2>R 50,000.00</h2>
+                    </div>
+                    
+                    <h3>12 Customer Review</h3>
+
+                    <p class="ResultText">Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. 
+                        Explore its icy atmosphere and captivating moons. Experience thrilling 
+                        zero-gravity excursions, witness mesmerizing auroras, and immerse 
+                        yourself in celestial photography workshops. With luxury 
+                        accommodations and expert guides, discover the wonders of Uranus in a 
+                        journey of a lifetime.
+                    </p>
+
+                    <div class="buttonContainer">
+                        <div class="buttonRow">
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="IncButton" type="button">- 1 +</button>
+                                </div>
+                            </div>
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="button" type="button">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="moreInfo">
+                        <div class="infoText">
+                            <h2>SKU <br> Shuttle <br> Tags <br> Date </h2>
+                            <h2>: SS735 <br> : The Endeavor <br> : Uranus, Workshop, Adventure <br> : 16 May - 19 July</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="result2">
+        <div class="resultContent">
+            <div class="flexRow">
+                <div class="flexItem2">
+                    <img src="../assets/flightMoon.png" width>
+                </div>
+    
+                <div class="flexItem2">
+                    <h1 id="result2Heading">Moonlight Meander</h1>
+
+                    <div id="priceResult2" class="price">
+                        <h2>R 15,000.00</h2>
+                    </div>
+
+                    <h3>43 Customer Review</h3>
+                    
+                    <p id="result2Desc" class="ResultText">Experience the ultimate lunar getaway with our "Moonlight Meander" 
+                        package. Depart Earths atmosphere aboard the "Celestial Cruiser" for a 
+                        short but unforgettable journey to the Moon. Enjoy lunar walks, 
+                        breathtaking views of Earthrise, and stargazing under the moons serene 
+                        glow. Immerse yourself in luxury accommodations amidst the tranquility 
+                        of space.
+                    </p>
+
+                    <div class="buttonContainer">
+                        <div class="buttonRow">
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button id="buttonResult2" class="IncButton" type="button">- 1 +</button>
+                                </div>
+                            </div>
+                            <div class="buttonItem2">
+                                <div class="bookButton">
+                                    <button class="button" type="button">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="result2Info" class="moreInfo">
+                        <div class="infoText">
+                            <h2>SKU <br> Shuttle <br> Tags <br> Date </h2>
+                            <h2>: SS451 <br> : The Voyager <br> : Moon, Commercial, Romantic <br> : 5 August - 12 August</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footerSec">
+            <div class="footerRow">
+                <div class="flexItem5">
+                    <img src="../assets/logo.png" width="270px">
+
+                    <p>Offering unforgettable trips to 
+                        explore planets in our solar 
+                        system.</p>
+                </div>
+                
+                <div class="flexItem5">
+                    <h1>Company</h1>
+                    <h2>Home</h2>
+                    <h2>Flights</h2>
+                    <h2>Contact Us</h2>
+                </div>
+                
+                <div class="flexItem5">
+                    <h1>Social Media Links</h1>
+                    <div class="socialItems">
+                        <div class="socialRow">
+                            <div class="flexItem4"><img src="../assets/smInstagram.png"></div>
+                            <div class="flexItem4"><img src="../assets/smX.png"></div>
+                            <div class="flexItem4"><img src="../assets/smTicktock.png"></div>
+                            <div class="flexItem4"><img src="../assets/smFacebook.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerText">
+                <h2>All Rights Reserved @ Open Window 2024</h2>
+            </div>
+        </section>
+    </footer>
 </body>

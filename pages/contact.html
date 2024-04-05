@@ -30,15 +30,15 @@
                 <a href="../index.html"><img src="../assets/logo.png" width="266px" height="48px"></a>
 
                 <div class="topNavRight">
-                    <a class="active"><p>Home</p></a>
-                    <a><p>Flights</p></a>
-                    <a><p>Contact</p></a>
+                    <a href="../index.html">Home</a>
+                    <a href="Flights.html">Flights</a>
+                    <a class="active">Contact</a>
                 </div>
             </div>
         </nav>
         
         <div class="contactHeader">
-            <p>Contact Us</p>
+            <p>Contact <br> Us</p>
         </div>
         
     </header>
@@ -76,7 +76,7 @@
     <section class="detailSection">
         <div class="aboutContent">
             <div class="flexRow">
-                <div class="flexItem2">
+                <div class="socialImg" class="flexItem2">
                     <div class="labelText">
                         <h2>CONTACT US THROUGH OUR</h2>
                         <h1>SOCIAL MEDIA PAGES</h1>
@@ -100,14 +100,75 @@
                 </div>
     
                 <div class="flexItem2">
-                    <form>
-                        <label for="fname">Your name</label><br>
-                        <input type="text" id="fname" name="fname"><br>
-                        <label for="lname">Email address</label><br>
-                        <input type="email" id="lname" name="lname">
-                      </form>
+                    <div class="formContainer">
+            
+                        <form id="contact">
+                            <h3>SEND US A MESSAGE</h3>
+    
+                            <fieldset>
+                                <label for="Name">Your name</label><br>
+                                <input placeholder="Abc" type="text" tabindex="1" required>
+                            </fieldset>
+    
+                            <fieldset>
+                                <label for="Email">Your name</label><br>
+                                <input placeholder="Ab@def.com" type="email" tabindex="2" required>
+                            </fieldset>
+    
+                            <fieldset>
+                                <label for="subject">Subject</label><br>
+                                <input placeholder="This is an optional" type="text" tabindex="3" required>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="Name">Message</label><br>
+                                 <textarea placeholder="Hi! i'd like to ask about" tabindex="4" required></textarea>
+                            </fieldset>
+
+                             <fieldset>
+                                <button name="submit" type="submit" id="submitContactForm">Submit</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <section class="footerSec">
+            <div class="footerRow">
+                <div class="flexItem5">
+                    <img src="../assets/logo.png" width="270px">
+
+                    <p>Offering unforgettable trips to 
+                        explore planets in our solar 
+                        system.</p>
+                </div>
+                
+                <div class="flexItem5">
+                    <h1>Company</h1>
+                    <h2>Home</h2>
+                    <h2>Flights</h2>
+                    <h2>Contact Us</h2>
+                </div>
+                
+                <div class="flexItem5">
+                    <h1>Social Media Links</h1>
+                    <div class="socialItems">
+                        <div class="socialRow">
+                            <div class="flexItem4"><img src="../assets/smInstagram.png"></div>
+                            <div class="flexItem4"><img src="../assets/smX.png"></div>
+                            <div class="flexItem4"><img src="../assets/smTicktock.png"></div>
+                            <div class="flexItem4"><img src="../assets/smFacebook.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerText">
+                <h2>All Rights Reserved @ Open Window 2024</h2>
+            </div>
+        </section>
+    </footer>
 </body>
