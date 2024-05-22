@@ -18,6 +18,8 @@
 
         <link rel="stylesheet" href="../css/main.css">
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,12 +29,30 @@
     <header class="headerImg" style="background-image: url(../assets/headerbackBack.png)">
         <nav class="overlayNav">
             <div  class="bar">
-                <a href="../index.html"><img src="../assets/logo.png" width="266px" height="48px"></a>
+                <a href="../index.html" class="imgBar"><img src="../assets/logo.png" width="266px" height="48px"></a>
 
                 <div class="topNavRight">
                     <a href="../index.html">Home</a>
                     <a class="active">Flights</a>
                     <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="searchBar" >
+                    <div class="flexRow">
+                        <div class="searchBarLogos">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <div class="searchArea" id="searchText">
+                            <h2>Search</h2>
+                        </div>
+                        <div class="searchBarLogos" id="basketLogo" >
+                            <span class="material-symbols-outlined"style="font-size:30px">shopping_basket</span>
+                        </div>
+                    </div>
+    
+                    <div class="itemAmount" id="itemCount">
+                        <h2>2</h2>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -42,9 +62,27 @@
         </div>
         
     </header>
-
     <nav class="midBar">
+        <div class="midbarSection">
+            <div class="flexBar">
+                <div class="midbarContent">
+                    <span class="material-symbols-outlined" style="font-size:35px">Tune</span>
+                    <h4>Filter</h4>
+                    <span class="material-symbols-outlined" style="font-size:35px">view_cozy</span>
+                    <span class="material-symbols-outlined" style="font-size:35px" id="active">view_day</span>
+                    <div class="leftPageViewing">
+                        <h2 style="font-size:18px">Showing 1-16 of 32 results</h2>
+                    </div>
+                </div>
 
+                <div class="rightMBContent">
+                    <h4 id="rmbContentTxt">Show</h4>
+                    <div class="ShowBox"><h2 style="font-size:30px">6</h2></div>
+                    <h4 id="rmbContentTxt">Sort by</h4>
+                    <div class="ShowBox" id="sortBy"><h2 style="font-size:27px">Default</h2></div>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <section class="result1">
@@ -73,8 +111,10 @@
                     <div class="buttonContainer">
                         <div class="buttonRow">
                             <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="IncButton" type="button">- 1 +</button>
+                                <div class="incrementMenu">
+                                    <div class="decrementTicket" onclick="decrementResults()">-</div>
+                                    <input class="input" type="text" id="result1" placeholder="0" value="0"> <!--unresolved bug, is both a string and a integer-->
+                                    <div class="decrementTicket" onclick="incrementResults()">+</div>
                                 </div>
                             </div>
                             <div class="buttonItem2">
@@ -94,6 +134,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section class="result2">
@@ -355,21 +396,32 @@
                         system.</p>
                 </div>
                 
-                <div class="flexItem5">
+                <div class="flexItem5" id="companyTxt">
                     <h1>Company</h1>
-                    <h2>Home</h2>
-                    <h2>Flights</h2>
-                    <h2>Contact Us</h2>
+                    
+                    <div class="footerPageLinks">
+                        <a href="../index.html">Home</a>
+                        <a href="Flights.html">Flights</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
                 </div>
                 
                 <div class="flexItem5">
-                    <h1>Social Media Links</h1>
+                    <h1 id="socialLinkFooter">Social Media Links</h1>
                     <div class="socialItems">
                         <div class="socialRow">
-                            <div class="flexItem4"><img src="../assets/smInstagram.png"></div>
-                            <div class="flexItem4"><img src="../assets/smX.png"></div>
-                            <div class="flexItem4"><img src="../assets/smTicktock.png"></div>
-                            <div class="flexItem4"><img src="../assets/smFacebook.png"></div>
+                            <a href="https://www.instagram.com/openwindowinstitute/?hl=en">
+                                <div class="flexItem4"><img src="../assets/smInstagram.png"></div>
+                            </a>
+                            <a href="https://twitter.com/open_window_?lang=en">
+                                <div class="flexItem4"><img src="../assets/smX.png"></div>
+                            </a>
+                            <a href="https://www.tiktok.com/@open_window_">
+                                <div class="flexItem4"><img src="../assets/smTicktock.png"></div>
+                            </a>
+                            <a href="https://www.facebook.com/theopenwindow/">
+                                <div class="flexItem4"><img src="../assets/smFacebook.png"></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -380,4 +432,7 @@
             </div>
         </section>
     </footer>
+    
 </body>
+<script src="../js/script.js"></script>
+</html>

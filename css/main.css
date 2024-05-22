@@ -20,6 +20,14 @@ h2{
     font-size: 18px;
 }
 
+h4{
+    font-weight: 400;
+    font-family:'Poppins';
+    font-size: 25px;
+    margin: 0;
+    color: white;
+}
+
 @font-face {
     font-family: 'Porter sans Block';
     src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format(woff);
@@ -58,10 +66,6 @@ h2{
     margin: 0;
 }
 
-.homePageHeader img{
-    width: 100%;
-} 
-
 .overlayNav{
     position: absolute;
     top: 50px;
@@ -97,6 +101,7 @@ a.overlayNav{
     font-size: 20px;
     font-weight: 500px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .topNavRight img{
@@ -105,6 +110,55 @@ a.overlayNav{
 
 a.active{
     color: rgb(255, 0, 0);
+}
+
+.imgBar img{
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.searchArea{
+    width: 70%;
+}
+
+.searchBar{
+    background-color: white;
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+}
+
+#itemCount{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background-color: rgba(255, 0, 0, 0.904);
+    bottom: 60px;
+    text-align: center;
+    border-radius: 20px;
+    right: 120px;
+    color: white;
+}
+
+#itemCount h2{
+    margin: 0;
+    padding-top: 4px;
+}
+
+#searchText{
+    color: black;
+}
+
+#searchText h2{
+    font-weight: 600;
+}
+
+#basketLogo{
+    border-left: 3px solid rgba(0, 0, 0, 0.212);
+    padding-right: 20px;
 }
 
 .marsSection{
@@ -186,10 +240,6 @@ a.active{
 .flexItem3{
     flex: 20%;
     margin-left: 100px;
-}
-
-.flexItem3 img{
-    width: 100%;
 }
 
 .flexItem4 img{
@@ -283,6 +333,10 @@ a.active{
     margin: 0;
 }
 
+.aboutText p{
+    width: 80%;
+}
+
 .aboutContent{
     margin: 5%;
 }
@@ -305,6 +359,10 @@ a.active{
     text-align: left;
 }
 
+#abtImg{
+    margin-left: 100px;
+}
+
 .Gmaps{
     border-radius: 30px;
 }
@@ -318,8 +376,77 @@ a.active{
 }
 
 .midBar{
-    height: 100px;
     background-color: #45016d;
+}
+
+.midbarSection{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.midbarContent{
+    padding: 45px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.midbarContent span{
+    color: white;
+}
+
+.searchBarLogos{
+    padding: 0px 10px 0px 10px;
+}
+
+.rightMBContent{
+    float: right;
+    padding: 33px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.ShowBox{
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+}
+
+.ShowBox h2{
+    margin: 0;
+    color: #45016d;
+    position: absolute;
+    padding-left: 23px;
+    padding-top: 11px;
+}
+
+#sortBy{
+    width: 250px;
+}
+
+#rmbContentTxt{
+    margin-top: 15px;
+}
+
+.flexBar{
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+}
+
+.leftPageViewing{
+    padding-left: 20px;
+    border-left: 3px solid rgb(153, 153, 153);
+}
+
+.leftPageViewing h2{
+    margin: 0;
+    color: white;
 }
 
 .moreInfo{
@@ -376,6 +503,7 @@ a.active{
 }
 
 .button{
+    transition: 0.2s;
     background-color: #e51728;
     border-radius: 16px;
     color: white;
@@ -389,6 +517,11 @@ a.active{
     height: 70px;
     border: none;
     cursor: pointer;
+}
+
+.button:hover{
+    transition: 0.2s;
+    background-color: #fc7979af;
 }
 
 .buttonRow{
@@ -447,8 +580,7 @@ a.active{
 .footerRow{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row ;
+    flex-direction: row;
     margin: auto;
     gap: 200px;
     padding-bottom: 50px;
@@ -469,14 +601,63 @@ a.active{
     color: grey;
 }
 
-.footerText{
-    gap: 100px;
+.footerPageLinks{
+    margin-top: 30px;
+}
+
+.footerPageLinks a{
+    color: rgb(129, 129, 129);
+    font-family: 'Poppins';
+    line-height: 2.2;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footerPageLinks a:hover{
+    color: rgb(77, 77, 77);
 }
 
 .shuttleInnerSec{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.incrementMenu{
+    background-color: #45016d;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 80px;
+    padding: 20px 32px 20px 20px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.decrementTicket{
+    cursor: pointer;
+}
+
+.incrementTicket{
+    cursor: pointer;
+}
+
+.input {
+    border: none;
+    margin: 0px;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    width: 10px;
+    color: white;
+  }
 
 #contact{
     background-image: url(../assets/formBack.png);
@@ -595,4 +776,17 @@ fieldset{
 
 #homeButton{
     margin: 100px;
+}
+
+#socialLinkFooter{
+    padding-bottom: 16px;
+}
+
+#companyTxt{
+    padding-top: 35px;
+}
+
+#active{
+    color: red;
+    font-weight: 100;
 }

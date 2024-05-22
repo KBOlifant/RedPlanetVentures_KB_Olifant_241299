@@ -18,6 +18,7 @@
 
         <link rel="stylesheet" href="css/main.css">
 
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -35,12 +36,30 @@
 
         <nav class="overlayNav">
             <div class="bar">
-                <a href="index.html"><img src="assets/logo.png" width="266px" height="48px"></a>
+                <a href="index.html" class="imgBar"><img src="assets/logo.png" width="266px" height="48px"></a>
 
                 <div class="topNavRight">
                     <a href="/index.html"class="active">Home</a>
                     <a href="pages/Flights.html">Flights</a>
                     <a href="pages/contact.html">Contact</a>
+                </div>
+
+                <div class="searchBar" >
+                    <div class="flexRow">
+                        <div class="searchBarLogos">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <div class="searchArea" id="searchText">
+                            <h2>Search</h2>
+                        </div>
+                        <div class="searchBarLogos" id="basketLogo" >
+                            <span class="material-symbols-outlined"style="font-size:30px">shopping_basket</span>
+                        </div>
+                    </div>
+
+                    <div class="itemAmount" id="itemCount">
+                        <h2>2</h2>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -48,7 +67,7 @@
 
     <section class="marsSection">
         <div class="flexRow">
-            <div class="flexItem"><img src="assets/marsSliderClipped1.png" width="609px" height="649px"></div>
+            <div class="flexItem"><img src="assets/marsSliderClipped1.png" width="709px" height="749px"></div>
 
             <div class="flexItem">
                 <div class="textBlock">
@@ -65,7 +84,9 @@
 
                 <div class="homeButton">
                     <div class="bookButton">
-                        <button class="button" type="button">Book Now</button>
+                        <a href="pages/Flights.html">
+                            <button class="button" type="button">Book Now</button>
+                        </a>
                     </div>
                 </div>
                 
@@ -91,7 +112,7 @@
                         </div>
                     </div>
         
-                    <div class="flexItem2"><img src="assets/spacSchuttles.png" width="609px" height="477px"></div>
+                    <div class="flexItem2"><img src="assets/spacSchuttles.png" width="709px" height="577px"></div>
                 </div>
             </div>
         </div>
@@ -144,7 +165,10 @@
                     </div>
     
                     <div class="flexItem3">
-                        <img src="assets/upcomingTrip4.png">
+                        <div class="item3img">
+                            <img src="assets/upcomingTrip4.png">
+                        </div>
+                        
                         <div class="tripText">
                             <h2>
                                 Ring a Round a Saturn
@@ -157,7 +181,9 @@
                 </div>  
                 <div class="tripButton">
                     <div class="bookButton">
-                        <button class="button" type="button">Book a Trip Now</button>
+                        <a href="pages/Flights.html">
+                            <button class="button" type="button">Book a Trip Now</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -175,21 +201,32 @@
                         system.</p>
                 </div>
                 
-                <div class="flexItem5">
+                <div class="flexItem5" id="companyTxt">
                     <h1>Company</h1>
-                    <h2>Home</h2>
-                    <h2>Flights</h2>
-                    <h2>Contact Us</h2>
+
+                    <div class="footerPageLinks">
+                        <a href="/index.html">Home</a>
+                        <a href="pages/Flights.html">Flights</a>
+                        <a href="pages/contact.html">Contact</a>
+                    </div>
                 </div>
                 
                 <div class="flexItem5">
-                    <h1>Social Media Links</h1>
+                    <h1 id="socialLinkFooter">Social Media Links</h1>
                     <div class="socialItems">
                         <div class="socialRow">
-                            <div class="flexItem4"><img src="assets/smInstagram.png"></div>
-                            <div class="flexItem4"><img src="assets/smX.png"></div>
-                            <div class="flexItem4"><img src="assets/smTicktock.png"></div>
-                            <div class="flexItem4"><img src="assets/smFacebook.png"></div>
+                            <a href="https://www.instagram.com/openwindowinstitute/?hl=en">
+                                <div class="flexItem4"><img src="assets/smInstagram.png"></div>
+                            </a>
+                            <a href="https://twitter.com/open_window_?lang=en">
+                                <div class="flexItem4"><img src="assets/smX.png"></div>
+                            </a>
+                            <a href="https://www.tiktok.com/@open_window_">
+                                <div class="flexItem4"><img src="assets/smTicktock.png"></div>
+                            </a>
+                            <a href="https://www.facebook.com/theopenwindow/">
+                                <div class="flexItem4"><img src="assets/smFacebook.png"></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -197,6 +234,7 @@
 
             <div class="footerText">
                 <h2>All Rights Reserved @ Open Window 2024</h2>
+                
             </div>
         </section>
     </footer>
