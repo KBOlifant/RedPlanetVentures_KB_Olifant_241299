@@ -530,10 +530,6 @@ a.active{
     gap: 50px;
 }
 
-.buttonItem2{
-    gap: 50px;
-}
-
 .IncButton{
     background-color: #45016d;
     border-radius: 16px;
@@ -633,8 +629,8 @@ a.active{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: normal;
-    width: 80px;
-    padding: 20px 32px 20px 20px;
+    width: 100px;
+    padding: 20px 22px 20px 20px;
     border: none;
     display: flex;
     flex-direction: row;
@@ -655,9 +651,109 @@ a.active{
     font-size: 18px;
     cursor: pointer;
     background: transparent;
-    width: 10px;
+    width: 20px;
     color: white;
   }
+
+/*separate modal container for padding */
+.modal {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* modal container */
+.modalContainer{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top *//* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 2px solid #00ffbf;
+  width: 80%;
+  color: #45016d;
+  border-radius: 20px;
+}
+
+.modalFooterContainer{
+    padding: 20px 50px 0px 50px;
+    
+}
+
+.modalFooter{
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top: solid 1px rgb(185, 185, 185);
+    padding: 30px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Ticket{
+    display: flex;
+    justify-content: space-between;     
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    text-align: left;
+    align-items: center;
+    width: 90%;
+}
+
+.Ticket img{
+    height: 250px;
+}
+
+.Ticket p{
+    color: #000;
+    text-align: left;
+}
+
+.leftSideCart {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.modalHeader{
+    background-color: #45016d;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+.modalHeader h1{
+    color: #ffffff;
+}
+
+.modalHeader h2{
+    color: aqua;
+}
 
 #contact{
     background-image: url(../assets/formBack.png);

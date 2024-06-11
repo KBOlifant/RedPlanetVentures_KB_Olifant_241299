@@ -51,11 +51,161 @@
                     </div>
     
                     <div class="itemAmount" id="itemCount">
-                        <h2>2</h2>
+                        <h2 type="text" id="itemsInCart" value="0">0</h2>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <div class="modalContainer" id="myModalContainer" style="display: none;">
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modalHeader">
+                        <h1>
+                            Shopping Cart
+                        </h1>
+                        <h2>
+                            Review your tickets below and proceed to checkout!
+                        </h2>
+                    </div>
+                    <div  id="marsItem" style="display: none;">
+                        <div class="Ticket">
+                            <div class="leftSideCart">
+                                <img src="../assets/flighhtMars.png">
+                                <div id="TicketsAmt">
+                                    <h1>The Classic Mars Experience</h1>
+                                    <p>You Currently have 0 Tickets</p>
+                                </div>
+                            </div>
+                            <div class="rightSideCart">
+                                <div class="buttonItem2">
+                                    <div class="incrementMenu">
+                                        <div class="decrementTicket" onclick="decrementResults('c_result1')">-</div>
+                                        <input class="input" type="text" id="c_result1" placeholder="0" value="0">
+                                        <div class="incrementTicket" onclick="incrementResults('c_result1')">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div  id="neptuneItem" style="display: none;">
+                        <div class="Ticket">
+                            <div class="leftSideCart">
+                                <img src="../assets/flightNeptune.png">
+                                <div id="TicketsAmt">
+                                    <h1>Neptune’s Cosmic Dive</h1>
+                                    <p>You Currently have 0 Tickets</p>
+                                </div>
+                            </div>
+                            <div class="rightSideCart">
+                                <div class="buttonItem2">
+                                    <div class="incrementMenu">
+                                        <div class="decrementTicket" onclick="decrementResults('c_result2')">-</div>
+                                        <input class="input" type="text" id="c_result2" placeholder="0" value="0">
+                                        <div class="incrementTicket" onclick="incrementResults('c_result2')">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div  id="jupiterItem" style="display: none;">
+                        <div class="Ticket">
+                            <div class="leftSideCart">
+                                <img src="../assets/flightJupiter.png">
+                                <div id="TicketsAmt">
+                                    <h1>The Giant’s Journey</h1>
+                                    <p>You Currently have 0 Tickets</p>
+                                </div>
+                            </div>
+                            <div class="rightSideCart">
+                                <div class="buttonItem2">
+                                    <div class="incrementMenu">
+                                        <div class="decrementTicket" onclick="decrementResults('c_result3')">-</div>
+                                        <input class="input" type="text" id="c_result3" placeholder="0" value="0">
+                                        <div class="incrementTicket" onclick="incrementResults('result3')">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  id="saturnItem" style="display: none;">
+                        <div class="Ticket">
+                            <div class="leftSideCart">
+                                <img src="../assets/flightSaturn.png">
+                                <div id="TicketsAmt">
+                                    <h1>Ring Around a Saturn</h1>
+                                    <p>You Currently have 0 Tickets</p>
+                                </div>
+                            </div>
+                            <div class="rightSideCart">
+                                <div class="buttonItem2">
+                                    <div class="incrementMenu">
+                                        <div class="decrementTicket" onclick="decrementResults('c_result4')">-</div>
+                                        <input class="input" type="text" id="c_result4" placeholder="0" value="0">
+                                        <div class="incrementTicket" onclick="incrementResults('result4')">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  id="uranusItem" style="display: none;">
+                        <div class="Ticket">
+                            <div class="leftSideCart">
+                                <img src="../assets/flightUranus.png">
+                                <div id="TicketsAmt">
+                                    <h1>Uranus Uncharted</h1>
+                                    <p>You Currently have 0 Tickets</p>
+                                </div>
+                            </div>
+                            <div class="rightSideCart">
+                                <div class="buttonItem2">
+                                    <div class="incrementMenu">
+                                        <div class="decrementTicket" onclick="decrementResults('c_result5')">-</div>
+                                        <input class="input" type="text" id="c_result5" placeholder="0" value="0">
+                                        <div class="incrementTicket" onclick="incrementResults('result5')">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  id="moonItem" style="display: none;">
+                        <div class="Ticket">
+                            <div class="leftSideCart">
+                                <img src="../assets/flightMoon.png">
+                                <div id="TicketsAmt">
+                                    <h1>Moonlight Meander</h1>
+                                    <p>You Currently have 0 Tickets</p>
+                                </div>
+                            </div>
+                            <div class="rightSideCart">
+                                <div class="buttonItem2">
+                                    <div class="incrementMenu">
+                                        <div class="decrementTicket" onclick="decrementResults('c_result6')">-</div>
+                                        <input class="input" type="text" id="c_result6" placeholder="0" value="0">
+                                        <div class="incrementTicket" onclick="incrementResults('result6')">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modalFooterContainer">
+                        <div class="modalFooter">
+                            <div class="bookButton">
+                                <button class="button" type="button" id="CheckoutBtn">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div class="contactHeader">
             <p>Book a Flight</p>
@@ -110,17 +260,13 @@
 
                     <div class="buttonContainer">
                         <div class="buttonRow">
-                            <div class="buttonItem2">
-                                <div class="incrementMenu">
-                                    <div class="decrementTicket" onclick="decrementResults()">-</div>
-                                    <input class="input" type="text" id="result1" placeholder="0" value="0"> <!--unresolved bug, is both a string and a integer-->
-                                    <div class="decrementTicket" onclick="incrementResults()">+</div>
-                                </div>
+                            <div class="incrementMenu">
+                                <div class="decrementTicket" onclick="decrementResults('result1')">-</div>
+                                <input class="input" type="text" id="result1" placeholder="0" value="0">
+                                <div class="incrementTicket" onclick="incrementResults('result1')">+</div>
                             </div>
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="button" type="button">Book Now</button>
-                                </div>
+                            <div class="bookButton">
+                                <button class="button" type="button" onclick="bookNow('result1', 'marsItem')">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -162,15 +308,13 @@
 
                     <div class="buttonContainer">
                         <div class="buttonRow">
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button id="buttonResult2" class="IncButton" type="button">- 1 +</button>
-                                </div>
+                            <div class="incrementMenu" id="buttonResult2">
+                                <div class="decrementTicket" onclick="decrementResults('result2')">-</div>
+                                <input class="input" type="text" id="result2" placeholder="0" value="0"> <!--unresolved bug, is both a string and a integer-->
+                                <div class="incrementTicket" onclick="incrementResults('result2')">+</div>
                             </div>
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="button" type="button">Book Now</button>
-                                </div>
+                            <div class="bookButton">
+                                <button class="button" type="button" onclick="bookNow('result2', 'neptuneItem')">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -211,15 +355,13 @@
 
                     <div class="buttonContainer">
                         <div class="buttonRow">
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="IncButton" type="button">- 1 +</button>
-                                </div>
+                            <div class="incrementMenu">
+                                <div class="decrementTicket" onclick="decrementResults('result3')">-</div>
+                                <input class="input" type="text" id="result3" placeholder="0" value="0">
+                                <div class="incrementTicket" onclick="incrementResults('result3')">+</div>
                             </div>
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="button" type="button">Book Now</button>
-                                </div>
+                            <div class="bookButton">
+                                <button class="button" type="button" onclick="bookNow('result3', 'jupiterItem')">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -261,15 +403,13 @@
 
                     <div class="buttonContainer">
                         <div class="buttonRow">
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button id="buttonResult2" class="IncButton" type="button">- 1 +</button>
-                                </div>
+                            <div class="incrementMenu" id="buttonResult2">
+                                <div class="decrementTicket" onclick="decrementResults('result4')">-</div>
+                                <input class="input" type="text" id="result4" placeholder="0" value="0"> <!--unresolved bug, is both a string and a integer-->
+                                <div class="incrementTicket" onclick="incrementResults('result4')">+</div>
                             </div>
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="button" type="button">Book Now</button>
-                                </div>
+                            <div class="bookButton">
+                                <button class="button" type="button" onclick="bookNow('result4', 'saturnItem')">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -311,15 +451,13 @@
 
                     <div class="buttonContainer">
                         <div class="buttonRow">
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="IncButton" type="button">- 1 +</button>
-                                </div>
+                            <div class="incrementMenu">
+                                <div class="decrementTicket" onclick="decrementResults('result5')">-</div>
+                                <input class="input" type="text" id="result5" placeholder="0" value="0">
+                                <div class="incrementTicket" onclick="incrementResults('result5')">+</div>
                             </div>
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="button" type="button">Book Now</button>
-                                </div>
+                            <div class="bookButton">
+                                <button class="button" type="button" onclick="bookNow('result5', 'uranusItem')">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -361,15 +499,13 @@
 
                     <div class="buttonContainer">
                         <div class="buttonRow">
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button id="buttonResult2" class="IncButton" type="button">- 1 +</button>
-                                </div>
+                            <div class="incrementMenu" id="buttonResult2">
+                                <div class="decrementTicket" onclick="decrementResults('result6')">-</div>
+                                <input class="input" type="text" id="result6" placeholder="0" value="0"> <!--unresolved bug, is both a string and a integer-->
+                                <div class="incrementTicket" onclick="incrementResults('result6')">+</div>
                             </div>
-                            <div class="buttonItem2">
-                                <div class="bookButton">
-                                    <button class="button" type="button">Book Now</button>
-                                </div>
+                            <div class="bookButton">
+                                <button class="button" type="button" onclick="bookNow('result6', 'moonItem')">Book Now</button>
                             </div>
                         </div>
                     </div>
