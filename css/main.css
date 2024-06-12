@@ -755,6 +755,16 @@ a.active{
     color: aqua;
 }
 
+#removeItem{
+    color: #ff0000;
+    font-family: 'Poppins';
+}
+
+#removeItem:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #contact{
     background-image: url(../assets/formBack.png);
     background-size: cover;

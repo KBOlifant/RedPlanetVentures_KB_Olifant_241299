@@ -76,15 +76,16 @@
                                 <img src="../assets/flighhtMars.png">
                                 <div id="TicketsAmt">
                                     <h1>The Classic Mars Experience</h1>
-                                    <p>You Currently have 0 Tickets</p>
+                                    <p id="c_marsItem">You Currently have 0 Tickets</p>
+                                    <a id="removeItem" onclick="RemoveTicket('c_result1', 'marsItem')">Remove</a>
                                 </div>
                             </div>
                             <div class="rightSideCart">
                                 <div class="buttonItem2">
                                     <div class="incrementMenu">
-                                        <div class="decrementTicket" onclick="decrementResults('c_result1')">-</div>
+                                        <div class="decrementTicket" onclick="decrementTickets('c_marsItem', 'c_result1')">-</div>
                                         <input class="input" type="text" id="c_result1" placeholder="0" value="0">
-                                        <div class="incrementTicket" onclick="incrementResults('c_result1')">+</div>
+                                        <div class="incrementTicket" onclick="incrementTickets('c_marsItem', 'c_result1')">+</div>
                                     </div>
                                 </div>
                             </div>
@@ -97,15 +98,16 @@
                                 <img src="../assets/flightNeptune.png">
                                 <div id="TicketsAmt">
                                     <h1>Neptune’s Cosmic Dive</h1>
-                                    <p>You Currently have 0 Tickets</p>
+                                    <p id="c_neptuneItem">You Currently have 0 Tickets</p>
+                                    <a id="removeItem" onclick="RemoveTicket('c_result2', 'neptuneItem')">Remove</a>
                                 </div>
                             </div>
                             <div class="rightSideCart">
                                 <div class="buttonItem2">
                                     <div class="incrementMenu">
-                                        <div class="decrementTicket" onclick="decrementResults('c_result2')">-</div>
+                                        <div class="decrementTicket" onclick="decrementTickets('c_neptuneItem', 'c_result2')">-</div>
                                         <input class="input" type="text" id="c_result2" placeholder="0" value="0">
-                                        <div class="incrementTicket" onclick="incrementResults('c_result2')">+</div>
+                                        <div class="incrementTicket" onclick="incrementTickets('c_neptuneItem', 'c_result2')">+</div>
                                     </div>
                                 </div>
                             </div>
@@ -118,15 +120,16 @@
                                 <img src="../assets/flightJupiter.png">
                                 <div id="TicketsAmt">
                                     <h1>The Giant’s Journey</h1>
-                                    <p>You Currently have 0 Tickets</p>
+                                    <p id="c_jupiterItem">You Currently have 0 Tickets</p>
+                                    <a id="removeItem" onclick="RemoveTicket('c_result3', 'jupiterItem')">Remove</a>
                                 </div>
                             </div>
                             <div class="rightSideCart">
                                 <div class="buttonItem2">
                                     <div class="incrementMenu">
-                                        <div class="decrementTicket" onclick="decrementResults('c_result3')">-</div>
+                                        <div class="decrementTicket" onclick="decrementTickets('c_jupiterItem','c_result3')">-</div>
                                         <input class="input" type="text" id="c_result3" placeholder="0" value="0">
-                                        <div class="incrementTicket" onclick="incrementResults('result3')">+</div>
+                                        <div class="incrementTicket" onclick="incrementTickets('c_jupiterItem','c_result3')">+</div>
                                     </div>
                                 </div>
                             </div>
@@ -139,15 +142,16 @@
                                 <img src="../assets/flightSaturn.png">
                                 <div id="TicketsAmt">
                                     <h1>Ring Around a Saturn</h1>
-                                    <p>You Currently have 0 Tickets</p>
+                                    <p id="c_saturnItem">You Currently have 0 Tickets</p>
+                                    <a id="removeItem" onclick="RemoveTicket('c_result4', 'saturnItem')">Remove</a>
                                 </div>
                             </div>
                             <div class="rightSideCart">
                                 <div class="buttonItem2">
                                     <div class="incrementMenu">
-                                        <div class="decrementTicket" onclick="decrementResults('c_result4')">-</div>
+                                        <div class="decrementTicket" onclick="decrementTickets('c_saturnItem','c_result4')">-</div>
                                         <input class="input" type="text" id="c_result4" placeholder="0" value="0">
-                                        <div class="incrementTicket" onclick="incrementResults('result4')">+</div>
+                                        <div class="incrementTicket" onclick="incrementTickets('c_saturnItem','c_result4')">+</div>
                                     </div>
                                 </div>
                             </div>
@@ -160,15 +164,16 @@
                                 <img src="../assets/flightUranus.png">
                                 <div id="TicketsAmt">
                                     <h1>Uranus Uncharted</h1>
-                                    <p>You Currently have 0 Tickets</p>
+                                    <p id="c_uranusItem">You Currently have 0 Tickets</p>
+                                    <a id="removeItem" onclick="RemoveTicket('c_result5', 'uranusItem')">Remove</a>
                                 </div>
                             </div>
                             <div class="rightSideCart">
                                 <div class="buttonItem2">
                                     <div class="incrementMenu">
-                                        <div class="decrementTicket" onclick="decrementResults('c_result5')">-</div>
+                                        <div class="decrementTicket" onclick="decrementTickets('c_uranusItem','c_result5')">-</div>
                                         <input class="input" type="text" id="c_result5" placeholder="0" value="0">
-                                        <div class="incrementTicket" onclick="incrementResults('result5')">+</div>
+                                        <div class="incrementTicket" onclick="incrementTickets('c_uranusItem','c_result5')">+</div>
                                     </div>
                                 </div>
                             </div>
@@ -181,15 +186,16 @@
                                 <img src="../assets/flightMoon.png">
                                 <div id="TicketsAmt">
                                     <h1>Moonlight Meander</h1>
-                                    <p>You Currently have 0 Tickets</p>
+                                    <p id="c_moonItem">You Currently have 0 Tickets</p>
+                                    <a id="removeItem" onclick="RemoveTicket('c_result6', 'moonItem')">Remove</a>
                                 </div>
                             </div>
                             <div class="rightSideCart">
                                 <div class="buttonItem2">
                                     <div class="incrementMenu">
-                                        <div class="decrementTicket" onclick="decrementResults('c_result6')">-</div>
+                                        <div class="decrementTicket" onclick="decrementTickets('c_moonItem','c_result6')">-</div>
                                         <input class="input" type="text" id="c_result6" placeholder="0" value="0">
-                                        <div class="incrementTicket" onclick="incrementResults('result6')">+</div>
+                                        <div class="incrementTicket" onclick="incrementTickets('c_moonItem','c_result6')">+</div>
                                     </div>
                                 </div>
                             </div>
