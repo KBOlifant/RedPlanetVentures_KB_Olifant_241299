@@ -84,6 +84,8 @@ h4{
     background-color: #ffffffaa;
     border-radius: 30px;
     margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 a.overlayNav{
@@ -92,9 +94,8 @@ a.overlayNav{
 }
 
 .topNavRight{
-    position: absolute;
+    padding-top: 35px;
     margin: 0;
-    transform: translateX(215%);
     bottom: 35%;
 }
 
@@ -660,9 +661,13 @@ a.active{
   }
 
 /*separate modal container for padding */
-.modal {
+.modal{
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.modal_cont{
+    padding-top: 700px;
 }
 
 /* modal container */
@@ -699,6 +704,8 @@ a.active{
     border-bottom-right-radius: 18px;
     border-top: solid 1px rgb(185, 185, 185);
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* The Close Button */
@@ -737,6 +744,15 @@ a.active{
     text-align: left;
 }
 
+.TicketPrice{
+    color: red;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin: 0;
+    padding-top: 25px;
+    text-align: end;
+}
+
 .leftSideCart {
     display: flex;
     gap: 50px;
@@ -757,6 +773,45 @@ a.active{
 
 .modalHeader h2{
     color: aqua;
+}
+
+.totPrice{
+    display: flex;
+}
+
+.searchArea{
+    height: 30px;
+    width: 90%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+#TY_txt{
+    text-align: center;
+    font-size: 32px;
+}
+
+#contactModal{
+    width: 30%;
+    top: 20px;
+    border: 2px solid #555555;
+}
+
+#contactModal p{
+    color: #474747;
+    margin: 20px;
+    font-size: 22px;
+}
+
+#rowSearch{
+    padding-top: 11px;
+    justify-content: space-between;
+}
+
+#totPrice{
+    color: #ff0000;
+    font-weight: 400;
 }
 
 #removeItem{
@@ -899,4 +954,8 @@ fieldset{
 #active{
     color: red;
     font-weight: 100;
+}
+
+#basketLogo:hover{
+    cursor: pointer;
 }

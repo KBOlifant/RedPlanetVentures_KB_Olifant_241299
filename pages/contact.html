@@ -27,34 +27,47 @@
 <body>
     <header class="headerImg" style="background-image: url(../assets/headerbackBack.png)">
         <nav class="overlayNav">
-            <div class="bar">
+            <div  class="bar">
                 <a href="../index.html" class="imgBar"><img src="../assets/logo.png" width="266px" height="48px"></a>
 
                 <div class="topNavRight">
                     <a href="../index.html">Home</a>
                     <a href="Flights.html">Flights</a>
                     <a class="active">Contact</a>
+                    <a href="about.html">About Us</a>
                 </div>
 
                 <div class="searchBar" >
-                    <div class="flexRow">
+                    <div class="flexRow" id="rowSearch">
                         <div class="searchBarLogos">
                             <span class="material-symbols-outlined">search</span>
                         </div>
-                        <div class="searchArea" id="searchText">
-                            <h2>Search</h2>
+                        <div id="searchText">
+                            <form>
+                                <input class="searchArea" type="text" placeholder="Search">
+                            </form>
                         </div>
-                        <div class="searchBarLogos" id="basketLogo" >
+                        <div class="searchBarLogos" id="basketLogo">
                             <span class="material-symbols-outlined"style="font-size:30px">shopping_basket</span>
                         </div>
                     </div>
     
                     <div class="itemAmount" id="itemCount">
-                        <h2>2</h2>
+                        <h2 type="text" id="itemsInCart" value="0">0</h2>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <div class="modalContainer2" id="myModalContainer2" style="display: none;">
+            <div id="myModal2" class="modal_cont">
+                <div class="modal-content" id="contactModal">
+                    <span class="close">&times;</span>
+                    <h2 id="TY_txt">Thank you for your message</h2>
+                    <p>we'll get back to you soon.</p>
+                </div>
+            </div>
+        </div>
         
         <div class="contactHeader">
             <p>Contact <br> Us</p>
@@ -138,8 +151,8 @@
                             </fieldset>
     
                             <fieldset>
-                                <label for="Email">Your name</label><br>
-                                <input placeholder="Ab@def.com" type="email" tabindex="2" required>
+                                <label for="Email">Your email</label><br>
+                                <input placeholder="Abc@def.com" type="email" tabindex="2" required>
                             </fieldset>
     
                             <fieldset>
@@ -209,4 +222,5 @@
             </div>
         </section>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
