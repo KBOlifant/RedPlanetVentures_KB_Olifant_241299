@@ -11,10 +11,22 @@ var btn = document.getElementById("basketLogo");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+const ticketUpperLimit = 99;
+
+function updater(result, r_value){
+    let cartAmt = parseInt(document.getElementById(r_value).value);
+    if(cartAmt < ticketUpperLimit + 1){
+        updateTicketAmt(result, cartAmt)
+    } else{
+        updateTicketAmt(result, ticketUpperLimit);
+        document.getElementById(r_value).value = ticketUpperLimit;
+    }
+}
+
 //setting up increasing and decreasing functions to add tickets in the flights age
 function incrementResults(result){
     let val = parseInt(document.getElementById(result).value);
-    if(val < 99){ //can only support up to 9 tickets
+    if(val < ticketUpperLimit){ //can only support up to 9 tickets
         val ++;
     }
     document.getElementById(result).value = val;
@@ -31,25 +43,36 @@ function decrementResults(result){
 
 function incrementTickets(txt_amt, TicketAmt){
     let val = parseInt(document.getElementById(TicketAmt).value);
-    if(val < 99){ //can only support up to 9 tickets
+    if(val < ticketUpperLimit){ //can only support up to 9 tickets
         val ++;
         document.getElementById(TicketAmt).value = val;
         let itemsInCart = parseInt(document.getElementById('itemsInCart').innerHTML) + 1;
         document.getElementById('itemsInCart').innerHTML = itemsInCart;
+    } else{
+        if(val > 0){
+            document.getElementById(TicketAmt).value = ticketUpperLimit;
+            document.getElementById('itemsInCart').innerHTML = ticketUpperLimit;
+        }
     }
     updateTicketAmt(txt_amt, val);
 }
 
 function decrementTickets(txt_amt, TicketAmt){
     let val = parseInt(document.getElementById(TicketAmt).value);
-    let removeTicket = txt_amt.substr(2, txt_amt.length)
+    let removeTicket = txt_amt.substr(2, txt_amt.length) //getting the ticket name after removing the 'c_' prefix
     if(val > 1){ //can only support up to 9 tickets
         val --;
         document.getElementById(TicketAmt).value = val;
         let itemsInCart = parseInt(document.getElementById('itemsInCart').innerHTML) - 1;
         document.getElementById('itemsInCart').innerHTML = itemsInCart;
     } else{
-        RemoveTicket(TicketAmt, removeTicket)
+        if(val > 0){
+            RemoveTicket(TicketAmt, removeTicket)
+        } else{
+            document.getElementById(TicketAmt).value = 0;
+            RemoveTicket(TicketAmt, removeTicket)
+        }
+        val = 0;
     }
     updateTicketAmt(txt_amt, val);
 }
@@ -75,10 +98,30 @@ function bookNow(result, Item){
     document.getElementById('c_'+result).value = cartAmt;
     updateTicketAmt('c_'+Item, cartAmt);
 
+    SaveCartData(cartAmt, 'c_'+Item);
+
     if(val > 0){
         document.getElementById(Item).style.display = "block";
     }
 } 
+
+function SaveCartData(totalItems, cartItem){
+    sessionStorage.setItem("cartItem", cartItem);
+    sessionStorage.setItem("totalItems", totalItems);
+}
+
+function LoadTotalItem(cartAmount){
+    let val = parseInt(document.getElementById(cartAmount).innerHTML) + parseInt(sessionStorage.getItem("totalItems"));
+    if(val != null){
+        document.getElementById(cartAmount).innerHTML = val;
+    } else{
+        console.log("working");
+    }
+}
+
+function closeModal(){
+    modalContainer.style.display = "none";
+}
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {

@@ -17,7 +17,6 @@
          Week 5-->
 
         <link rel="stylesheet" href="../css/main.css">
-
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +24,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="LoadTotalItem('itemsInCart')">
     <header class="headerImg" style="background-image: url(../assets/headerbackBack.png)">
         <nav class="overlayNav">
             <div  class="bar">
@@ -73,7 +72,7 @@
                     <div  id="marsItem" style="display: none;">
                         <div class="Ticket">
                             <div class="leftSideCart">
-                                <img src="../assets/flighhtMars.png">
+                                <a href="#mars" onclick="closeModal()"><img src="../assets/flighhtMars.png"></a>
                                 <div id="TicketsAmt">
                                     <h1>The Classic Mars Experience</h1>
                                     <p id="c_marsItem">You Currently have 0 Tickets</p>
@@ -84,7 +83,7 @@
                                 <div class="buttonItem2">
                                     <div class="incrementMenu">
                                         <div class="decrementTicket" onclick="decrementTickets('c_marsItem', 'c_result1')">-</div>
-                                        <input class="input" type="text" id="c_result1" placeholder="0" value="0">
+                                        <input class="input" type="text" id="c_result1" placeholder="0" value="0" onchange="updater('c_marsItem','c_result1')">
                                         <div class="incrementTicket" onclick="incrementTickets('c_marsItem', 'c_result1')">+</div>
                                     </div>
                                 </div>
@@ -95,7 +94,7 @@
                     <div  id="neptuneItem" style="display: none;">
                         <div class="Ticket">
                             <div class="leftSideCart">
-                                <img src="../assets/flightNeptune.png">
+                                <a href="#neptune" onclick="closeModal()"><img src="../assets/flightNeptune.png"></a>
                                 <div id="TicketsAmt">
                                     <h1>Neptune’s Cosmic Dive</h1>
                                     <p id="c_neptuneItem">You Currently have 0 Tickets</p>
@@ -117,7 +116,7 @@
                     <div  id="jupiterItem" style="display: none;">
                         <div class="Ticket">
                             <div class="leftSideCart">
-                                <img src="../assets/flightJupiter.png">
+                                <a href="#jupiter" onclick="closeModal()"><img src="../assets/flightJupiter.png"></a>
                                 <div id="TicketsAmt">
                                     <h1>The Giant’s Journey</h1>
                                     <p id="c_jupiterItem">You Currently have 0 Tickets</p>
@@ -139,7 +138,7 @@
                     <div  id="saturnItem" style="display: none;">
                         <div class="Ticket">
                             <div class="leftSideCart">
-                                <img src="../assets/flightSaturn.png">
+                                <a href="#saturn" onclick="closeModal()"><img src="../assets/flightSaturn.png"></a>
                                 <div id="TicketsAmt">
                                     <h1>Ring Around a Saturn</h1>
                                     <p id="c_saturnItem">You Currently have 0 Tickets</p>
@@ -161,7 +160,7 @@
                     <div  id="uranusItem" style="display: none;">
                         <div class="Ticket">
                             <div class="leftSideCart">
-                                <img src="../assets/flightUranus.png">
+                                <a href="#uranus" onclick="closeModal()"><img src="../assets/flightUranus.png"></a>
                                 <div id="TicketsAmt">
                                     <h1>Uranus Uncharted</h1>
                                     <p id="c_uranusItem">You Currently have 0 Tickets</p>
@@ -183,7 +182,7 @@
                     <div  id="moonItem" style="display: none;">
                         <div class="Ticket">
                             <div class="leftSideCart">
-                                <img src="../assets/flightMoon.png">
+                                <a href="#moon" onclick="closeModal()"><img src="../assets/flightMoon.png"></a>
                                 <div id="TicketsAmt">
                                     <h1>Moonlight Meander</h1>
                                     <p id="c_moonItem">You Currently have 0 Tickets</p>
@@ -241,7 +240,7 @@
         </div>
     </nav>
 
-    <section class="result1">
+    <section class="result1" id="mars">
         <div class="resultContent">
             <div class="flexRow">
                 <div id="flexEXC" class="flexItem2">
@@ -289,7 +288,7 @@
         
     </section>
 
-    <section class="result2">
+    <section class="result2" id="neptune">
         <div class="resultContent">
             <div class="flexRow">
                 <div class="flexItem2">
@@ -336,7 +335,7 @@
         </div>
     </section>
 
-    <section class="result1">
+    <section class="result1" id="jupiter">
         <div class="resultContent">
             <div class="flexRow">
                 <div class="flexItem2">
@@ -383,7 +382,7 @@
         </div>
     </section>
 
-    <section class="result2">
+    <section class="result2" id="saturn">
         <div class="resultContent">
             <div class="flexRow">
                 <div class="flexItem2">
@@ -431,7 +430,7 @@
         </div>
     </section>
 
-    <section class="result1">
+    <section class="result1" id="uranus">
         <div class="resultContent">
             <div class="flexRow">
                 <div class="flexItem2">
@@ -479,7 +478,7 @@
         </div>
     </section>
 
-    <section class="result2">
+    <section class="result2" id="moon">
         <div class="resultContent">
             <div class="flexRow">
                 <div class="flexItem2">
